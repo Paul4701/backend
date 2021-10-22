@@ -1,0 +1,12 @@
+what is REPL ??
+the repl feature of node is very useful in experimenting with node.js codes and to debug javascript codes
+
+
+Read-- reads user's input,parses yhe input into javascript data-structure,and stores in memory.
+
+Eval-- takes and evaluate the data structure
+
+Print-prints the result
+
+Loop-loops the above command untill the user presses ctrl-c twice
+
