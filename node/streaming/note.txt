@@ -1,0 +1,23 @@
+4 types of stream
+
+Readable -- used for read operation
+Writeable -- used for write operation
+Duplex -- it can be used for both read and write operation
+Transform -- type of stream where output is computed based  on input
+
+
+each type of stream is an eventEmitter instance and throws several events at different instance of times 
+for example 
+data-this event is fired when there is data available to read
+end- this event is fired whhen there is no data to read
+error- this event is fired when there is any error receiving or writing data 
+finish-this event is fired when all the data has been flushed to underlying system
+
+
+
+   // var fs=require('fs')
+    // fs.readFile('note.txt',(err,data)=>{
+    //   if(err) return console.error(err);
+    //   console.log(data.toString())
+    //   res.end(data.toString())
+    // })

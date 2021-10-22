@@ -3,13 +3,14 @@ const fs=require('fs');
 // const { json } = require('stream/consumers');
 // const { dirname } = require('path/posix')
 const server = http.createServer((req,res)=>{
+  console.log(req.url)
   if(req.url=='/data'){
   fs.readFile("./userApi/userApi.json","utf-8",(err,data)=>{
    console.log(data,err)
-     res.end(data)
+     res.send(data)
   })
 }else{
-      res.end('hio')
+      res.send('hio')
   }
 })
 
