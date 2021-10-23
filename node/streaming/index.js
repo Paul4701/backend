@@ -16,6 +16,7 @@ server.on('request',(req,res)=>{
     rstream.on('error',(err)=>{
         console.log(err)
     })
+    // rstream.pipe(res);
    
 })
 
